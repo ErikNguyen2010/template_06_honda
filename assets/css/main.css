@@ -1,0 +1,1151 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+}
+html,body{
+  overflow-x: hidden;
+}
+:root{
+  --animation-delay: 0.5s;
+}
+.container1 {
+  padding: 0 20px;
+}
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.header__first {
+  padding-top: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e5e5e5;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+
+}
+.header-first__navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header-first__logo img {
+  width: 120px;
+}
+.header-first__link {
+  text-decoration: none;
+  font-size: 26px;
+  color: black;
+}
+.header-first__link span {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  top: -3px;
+}
+.header-first__logo img {
+  width: 164px;
+  height: 35px;
+}
+.header-first__search a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+.header-first__search span {
+  position: relative;
+  top: -6px;
+}
+.header-first__search a i {
+  font-size: 30px;
+  margin-left: 50px;
+}
+.header__second {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 61px;
+}
+
+.header__air-bag1 {
+  background-color: #ff9600;
+  width: 286px;
+  height: 84px;
+  position: absolute;
+  transform: skewX(-20deg);
+  left: -38px;
+}
+
+.air-bag__detail {
+  position: absolute;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 30px;
+}
+.air-bag__detail i {
+  padding: 4px 9px;
+  background: #fff;
+  border-radius: 14px;
+  font-size: 15px;
+  color: #ff9600;
+}
+.air-bag__more {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px;
+  margin-left: 300px;
+  margin-top: 14px;
+  display: block;
+  width: 100%;
+}
+.air-bag__more span {
+  color: #ff9600;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.air-bag__more p{
+  display: none;
+}
+.header__stick a {
+  color: #dadada;
+  text-decoration: none;
+  font-size: 12px;
+
+}
+.header__stick .header__stick--active {
+  color: #ff9600;
+  margin-right: 10px;
+}
+.header__stick {
+  padding: 27px;
+  margin-right: 20px;
+  width: 100px;
+}
+.carousel {
+  padding-bottom: 20px;
+}
+.carousel-control-prev {
+  left: -130px;
+}
+.carousel-control-next{
+  right: -130px;
+  top: 0;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  padding: 20p;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.carousel-item:first-child {
+  background-image: url(https://www.honda.com/-/media/Honda-Homepage/Images/Homepage/Hero-card/project-courage/Honda_Hero_ProjectCourage_Desktop_1600x650.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vw;
+}
+.carousel-item:last-child {
+  background-image: url(../img/carousel-2.webp);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vw;
+}
+.carousel-indicators li {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-left: 16px;
+}
+.carousel-indicators {
+  margin-bottom: 0;
+}
+.carousel-indicators li.active {
+  background-color: #da0e0f;
+}
+
+.portfolio__list {
+  display: flex;
+  cursor: pointer;
+  overflow: hidden;
+}
+.portfolio__item {
+  width: 16.5vw;
+  height: calc(647px - 317.16px);
+  padding: 50px;
+  text-decoration: none;
+  text-align: center;
+  z-index: 10;
+}
+.portfolio__item--blue::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 17px solid #007cc2;
+  right: -17px;
+  top: 120px;
+}
+
+.portfolio__item img {
+  width: 100%;
+}
+.portfolio__item span {
+  text-transform: uppercase;
+  font-weight: 900;
+  position: relative;
+}
+.portfolio__item span::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  width: 105%;
+  background-color: #fff;
+}
+.portfolio__item--blue {
+  background-color: #007cc2;
+  position: relative;
+}
+.portfolio__item--black {
+  background-color: #000;
+  position: relative;
+}
+.portfolio__item--red,
+.portfolio__item--upper {
+  background-color: #cc0001;
+  position: relative;
+}
+.portfolio__item--grey {
+  background-color: #eee;
+  position: relative;
+}
+.portfolio__item--red::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 17px solid #cc0001;
+  right: -17px;
+  top: 120px;
+}
+.portfolio__item--upper::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 16px solid transparent;
+  border-bottom: 17px solid #cc0001;
+  border-left: 16px solid transparent;
+  right: calc(300px / 2);
+  top: -16px;
+}
+.portfolio__item--grey::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 16px solid transparent;
+  border-left: 16px solid transparent;
+  border-top: 17px solid #eee;
+  bottom: -16px;
+  right: calc(300px / 2);
+}
+.portfolio__item--left::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 17px solid #eee;
+  border-bottom: 16px solid transparent;
+  border-top: 16px solid transparent;
+  left: -32px;
+  bottom: calc(329.83px / 2);
+}
+.portfolio__item--black::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 17px solid #000;
+  border-bottom: 16px solid transparent;
+  border-top: 16px solid transparent;
+  left: -16px;
+  bottom: calc(329.83px / 2);
+}
+
+.portfolio__list p,
+.portfolio__list span {
+  color: #fff;
+  margin: 20px 0;
+}
+.portfolio__img {
+  background: url(../img/homepage-brand-autos-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 647px;
+  width: 33vw;
+  transform: scale(1);
+  transition: all 0.5s;
+  z-index: 5;
+}
+.portfolio__img a,
+.portfolio__img2 a,
+.portfolio__img3 a,
+.portfolio__img4 a,
+.portfolio__img5 a,
+.portfolio__img6 a,
+.portfolio__img7 a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.portfolio__img2 {
+  background: url(../img/moto.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33vw;
+  height: 317px;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.portfolio__list2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: calc(317.16px - 647px);
+}
+.portfolio__list3 {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: calc(317.16px - 647px);
+}
+.portfolio__item.portfolio__item--grey span::after {
+  background-color: #000;
+}
+.portfolio__img2-1 {
+  background: url(../img/homepage-brand-acura-nsx-desktop.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.12vw;
+  height: calc(647px - 317.16px);
+  transform: scale(1);
+  transition: all 0.5s;
+  z-index: 5;
+}
+.portfolio__img3 {
+  background: url(../img/catco.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 16.5vw;
+  height: calc(647px - 317.16px);
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.portfolio__list4 {
+  display: flex;
+  margin-left: 16.45vw;
+  margin-top: calc(317.16px - 647px);
+}
+.portfolio__img4 {
+  background: url(../img/MAYBAY.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.1vw;
+  height: 330px;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.portfolio__list5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: calc(317.16px - 647px);
+}
+.portfolio__img5 {
+  background: url(../img/xedua.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.1vw;
+  height: 330px;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.portfolio__list6 {
+  display: flex;
+  margin-top: calc(317.16px - 647px);
+}
+.portfolio__img6 {
+  background: url(../img/motor.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 16.48vw;
+  height: calc(647px - 317.16px);
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.portfolio__img7 {
+  background: url(../img/cano.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.03vw;
+  height: 330px;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.portfolio__item--grey p,
+.portfolio__item--grey span {
+  color: #000;
+}
+.portfolio__item--black:hover {
+  background-color: #242424;
+}
+.portfolio__item--black:hover::after {
+  border-color: transparent #242424 transparent transparent;
+}
+.portfolio__item--grey:hover {
+  background-color: #fff;
+}
+.portfolio__item--grey:hover::after {
+  border-color: #fff transparent;
+}
+.portfolio__item--blue:hover {
+  background-color: #0283cc;
+}
+.portfolio__item--blue:hover::after {
+  border-color: transparent #0283cc;
+}
+.portfolio__item--red:hover,
+.portfolio__item--upper:hover {
+  background-color: #da0e0f;
+}
+.portfolio__item--red:hover::after {
+  border-color: transparent #da0e0f;
+}
+.portfolio__item--upper:hover::after {
+  border-color: transparent transparent #da0e0f transparent;
+}
+.portfolio__img:hover,
+.portfolio__img2:hover,
+.portfolio__img2-1:hover,
+.portfolio__img3:hover,
+.portfolio__img4:hover,
+.portfolio__img5:hover,
+.portfolio__img6:hover,
+.portfolio__img7:hover {
+  transform: scale(1.1);
+}
+.portfolio__item--left:hover::after {
+  border-color: transparent #fff transparent transparent;
+}
+.portfolio__item-img {
+  overflow: hidden;
+}
+.company__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.company__header h1 {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px 0;
+  margin-bottom: 0;
+}
+.company__item {
+  width: 50%;
+  overflow: hidden;
+}
+.company__content {
+  position: relative;
+}
+.company__content video {
+  width: 100%;
+}
+.company__detail {
+  position: absolute;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.company__detail h1 {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  padding: 140px;
+}
+.company__detail span {
+  font-weight: 900;
+}
+.mt-7px {
+  margin-top: -7px;
+}
+.history__img {
+  background-image: url(../img/history.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 980px;
+  margin-top: -8px;
+}
+.history__header {
+  text-align: center;
+  padding-top: 80px;
+  color: #000;
+}
+.history__header h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.history__header p {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.history__header span {
+  font-weight: 900;
+}
+.post{
+  padding-bottom: 80px;
+}
+.post__main .container1{
+  padding: 0 95.141px;
+}
+.post__list {
+  display: flex;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+}
+.post__height{
+  height: 100%;
+}
+.post__header h1 {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px 0;
+  margin-bottom: 0;
+}
+.post__item {
+  width: calc(100% / 3);
+}
+.post__img {
+  transition: all 0.5s;
+  transform: scale(1);
+  overflow: hidden;
+}
+.post__img:hover {
+  transform: scale(1.1);
+}
+.post__img img {
+  width: 100%;
+}
+.post__detail {
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+}
+.post__detail::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 45%;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  border-bottom: 30px solid #f9f9f9;
+}
+.post__detail h1 {
+  font-size: 20px;
+  font-weight: 900;
+}
+.post__detail p {
+  font-size: 14px;
+}
+.post__detail a {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #337ab7;
+  font-weight: 900;
+}
+.post__detail a i {
+  font-size: 20px;
+  top: 2px;
+  position: relative;
+  margin-left: 5px;
+}
+.overflow {
+  overflow: hidden;
+}
+.background-grey{
+  background-color: #f2f2f2;
+}
+
+.post__img1--active {
+  transition: all 0.5s;
+  transform: scale(1);
+}
+
+.post__img1 {
+  position: relative;
+}
+.post__img1--active:hover {
+  transform: scale(1.1);
+}
+.post__img1--active img {
+  width: 100%;
+  height: 600px;
+}
+.post__icon {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  color: #fff;
+  font-size: 40px;
+}
+.post__detail1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 30px;
+}
+.post-detail__heading a {
+  font-size: 14px;
+  color: #337ab7;
+}
+.post__detail1 p {
+  font-size: 24px;
+  color: #000;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.post__date {
+  font-size: 12px;
+  color: #337ab7;
+  padding-bottom: 10px;
+  font-weight: 900;
+}
+.post-detail__logo a {
+  color: #8f8f8f;
+  font-size: 12px;
+  font-weight: 900;
+  margin-right: 20px;
+}
+.post-detail__logo a i {
+  font-size: 14px;
+}
+.post__detail1 {
+  position: relative;
+}
+.post__icon--twitter {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  font-size: 20px;
+  color: #4d9fe0;
+}
+.btn-previous {
+  position: absolute;
+  left: 16px;
+  top: calc(500px / 2);
+  color: #e4d9d2;
+  font-size: 50px;
+}
+.btn-next {
+  position: absolute;
+  right: 16px;
+  top: calc(500px / 2);
+  color: #e4d9d2;
+  font-size: 50px;
+}
+.footer {
+  background-color: #eeeeee;
+}
+.footer__item {
+  width: calc(100% / 3);
+}
+.footer .container1 {
+  padding: 0 95.141px;
+}
+.footer__list {
+  display: flex;
+  padding: 40px 0;
+}
+.footer__content h1 {
+  color: #8f8f8f;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.footer__content a {
+  display: block;
+  color: #000;
+  font-weight: 800;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.footer__content a:hover{
+  color: #8f8f8f;
+}
+.footer__content a span {
+  display: block;
+  color: #666;
+  font-weight: 600;
+  margin-top: 4px;
+}
+.footer__footer {
+  text-align: center;
+  padding: 30px 0;
+}
+.footer__social a i {
+  color: #fff;
+  position: relative;
+  top: 3px;
+}
+.footer__social a {
+  background-color: #000;
+  font-size: 14px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 12px;
+}
+.footer__social a:hover{
+  opacity: 0.7;
+}
+.footer__detail p {
+  color: #666;
+  font-size: 13px;
+  margin-top: 1.4rem;
+}
+.footer__detail a{
+  color: #337ab7;
+  font-size: 13px;
+  text-decoration: underline;
+  margin: 0 10px;
+}
+.footer__detail a:hover{
+  color: #000;
+}
+.footer__final a{
+  color: #337ab7;
+  font-weight: 600;
+}
+.footer__final a:hover{
+  color: #23527c;
+}
+.company__item.animate__delay-3s{
+  animation-delay: 0.3s;
+}
+.height-317px{
+  height: 317px;
+}
+@media screen and (max-width: 1200px){
+  .portfolio__item{
+    height: 198.33px;
+    padding: 0;
+    width: 17vw;
+  }
+  .portfolio__item img{
+    width: 70%;
+    margin-top: 20px;
+  }
+  .portfolio__list p{
+    font-size: 14px;
+  }
+  .portfolio__item-img,
+  .portfolio__img{
+    
+    height: 396.66px;
+  }
+  .portfolio__img2,
+  .portfolio__img2-1,
+  .portfolio__img4,
+  .portfolio__img5,
+  .portfolio__img7{
+    width: 33vw;
+    height: 198.33px;
+  }
+  .portfolio__img2-1{
+    height: 199.33px;
+  }
+  .portfolio__list2{
+    margin-top: -199px;
+  }
+  .portfolio__item--red p{
+    margin: 10px 0;
+  }
+  .portfolio__list3{
+    margin-top: -396px;
+  }
+  .portfolio__img3{
+    width: 17vw;
+    height: 199.33px;
+  }
+  .portfolio__list4{
+    margin-left: 17vw;
+    margin-top: -396px;
+  }
+  .portfolio__list5{
+    margin-top: -398px;
+  }
+  .portfolio__list6{
+    margin-top: -199px;
+    margin-left: -4px;
+  }
+  .portfolio__item-img6,
+  .portfolio__img6{
+    width: 17vw;
+    height: 198.33px;
+  }
+  .portfolio__item-img5,
+  .portfolio__img5,
+  .portfolio__item-img7,
+  .portfolio__img7{
+    width: 32.4vw;
+    height: 200.33px;
+  }
+  .portfolio__item--blue::after,
+  .portfolio__item--red::after {
+    top: 80px;
+  }
+  .portfolio__item--grey::after,
+  .portfolio__item--upper::after {
+    right: 80px;
+  }
+  .portfolio__item--black::after,
+  .portfolio__item--left::after{
+    bottom: 80px;
+  }
+  .portfolio__list3 .portfolio__item--grey p {
+    margin: 10px 0;
+  }
+  .portfolio__item-img7{
+    height: 198.33px;
+  }
+  .company__header h1{
+    margin-top: -25px;
+  }
+  .company__detail h1 {
+    padding: 60px;
+    position: relative;
+    top: 30px;
+  }
+  .history__img{
+    height: 612px;
+    max-width: 1200px;
+  }
+  .post__list{
+    flex-wrap: wrap;
+  }
+  .post__item{
+    width: 50%;
+  }
+  .post__img1--active img{
+    height: 450px;
+  }
+  
+}
+
+@media screen and (max-width: 992px){
+  .air-bag__detail span{
+    display: none;
+  }
+  .header__air-bag1{
+    width: 90px;
+    height: 95px;
+  }
+  .air-bag__detail i{
+    left: -16px;
+    bottom: 3px;
+    position: relative;
+  }
+  .air-bag__more{
+    margin-left: 68px;
+    display: block;
+    margin-top: -20px;
+
+  }
+  .carousel-item:last-child,
+  .carousel-item:first-child{
+    height: 43vw;
+  }
+  .air-bag__more p{
+    color: #a6a6a6;
+    display: block;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-weight: 700;
+  }
+  .air-bag__more span{
+    display: block;
+    margin-left: 0;
+  }
+  .company__detail p{
+    margin-bottom: 0;
+  }
+  .company__detail h1{
+    padding: 48px;
+  }
+  .post__main .container1{
+    padding: 0 50px;
+  }
+  .footer__list{
+    flex-wrap: wrap;
+  }
+  .footer__item{
+    width: 50%;
+  }
+  .company__content video{
+    width: 140%
+  }
+  .footer .container1{
+    padding: 0 50px;
+  }
+  .portfolio__item-img5, .portfolio__img5, .portfolio__item-img7, .portfolio__img7{
+    width: 33.4vw;
+  }
+  .portfolio__item-img, .portfolio__img {
+  }
+}
+@media screen and (max-width: 768px){
+  .header-first__search span{
+    display: none;
+  }
+  .carousel-item:first-child,
+  .carousel-item:last-child{
+    height: 42vw;
+  }
+  .company__list{
+    display: block;
+  }
+  .company__item{
+    width: 100%;
+  }
+  .company__content video{
+    width: 100%;
+    display: block;
+  }
+  .post__list{
+    display: block;
+  }
+  .post__item{
+    width: 100%;
+  }
+  .post__img1--active img{
+    display: block;
+    height: 700px;
+  }
+  .footer__list{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .header__air-bag1{
+    height: 118px;
+  }
+  .header__stick{
+    display: none;
+  }
+  .portfolio__item{
+    height: 181.33px;
+    width: 36vw;
+  }
+  .portfolio__item-img, 
+  .portfolio__img{
+    width: 64vw;
+    height: 180.66px;
+  }
+  .carousel-item:first-child,
+  .carousel-item:last-child{
+    height: 50vw;
+  }
+  .portfolio__list {
+    flex-wrap: wrap;
+  }
+  .portfolio__list3{
+    margin-top: -1px;
+    flex-direction: row-reverse;
+  }
+  .portfolio__list2 {
+    margin-top: -1px;
+  }
+  .portfolio__list5{
+    margin-top: -1px;
+    flex-direction: row-reverse;
+  }
+  .portfolio__list6{
+    margin-top: inherit;
+    flex-direction: row-reverse
+  }
+  .portfolio__img2,
+  .portfolio__img2-1,
+  .portfolio__img3,
+  .portfolio__img4,
+  .portfolio__img5,
+  .portfolio__img6,
+  .portfolio__img7{
+    width: 64vw;
+  }
+  .portfolio__list p{
+    display: none;
+  }
+  .portfolio__item img{
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 23px;
+  }
+  .portfolio__item--grey::after{
+    border-bottom: 16px solid transparent;
+    border-left: 17px solid #EEE;
+    border-top: 16px solid transparent;
+    right: -33px;
+    bottom: 70px;
+  }
+  .portfolio__list4{
+    margin-top: inherit;
+    margin-left: inherit;
+    flex-direction: row-reverse;
+  }
+
+  .company__detail{
+    width: 400px;
+  }
+  .company__content video{
+    width: 150%;
+  }
+  .history__img{
+    background: url(../img/homepage-p1-philosophy-mobile.jpg) 50% 50%/ cover no-repeat;
+    height: 330px;
+  }
+  .history__header{
+    padding-top: 200px;
+    color: #fff;
+  }
+  .history__header h1{
+    font-size: 19px;
+  }
+  .history__header p{
+    font-size: 13px;
+    margin-bottom: inherit;
+  }
+  .post__img1--active img{
+    height: 500px;
+  }
+  .post__main .container1{
+    padding: 0 20px;
+  }
+  .footer .container1{
+    padding: 0 20px;
+  }
+  .header-first__link span{
+    display: none;
+  }
+}
+.test__list{
+  display: flex;
+}
+.test__content{
+  display: flex;
+  height: 317px;
+}
+.test__item{
+  width: 50%;
+}
+.test__detail{
+  width: 35%;
+}
+.test-detail__info{
+  background-color: #337ab7;
+  color: #fff;
+  text-align: center;
+  height: 100%;
+}
+.test-detail__content{
+  color: #fff;
+}
+.test__img{
+  width: 69%;
+}
+.test__img-content{
+  background: url(../img/homepage-brand-autos-desktop.jpg) 50% 50% / cover no-repeat scroll transparent;
+  height: 200%;
+}
+.test__img-content2{
+  background: url(../img/moto.jpg) 50% 50% / cover no-repeat scroll transparent;
+  height: 100%;
+}
+.test-detail__info img{
+  display: inline-block;
+  width: 70%;
+  margin-bottom: 20px;
+}
+.test-detail__content p{
+  margin-bottom: 31px;
+}
+.test__content2{
+  display: flex;
+  height: 317px;
+}
+.test__img-content3{
+  background: url(../img/motor.jpg) 50% 50% / cover no-repeat scroll transparent;
+  height: 50%;
+}
+
+.test__detail2{
+  width: 35%;
+}
+.test__img2{
+  width: 35%;
+}
+.test-detail__info2{
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  height: 100%;
+}
+.test__item2{
+  width: calc(100% / 6);
+}
+.test__content6{
+  display: flex;
+  flex-direction: column;
+}
